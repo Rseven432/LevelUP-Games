@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUp Games - Loja de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</html>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<div class="jogo fade-in">Seja bem-vindo</div>
+
+    <header>
+        <img src="imagens/LevelUp Games.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#promocoes">Promoções</a></li>
+                <li><a href="#contactos">Contacto</a></li>
+                <li><a href="#carrinho">carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Os melhores jogos para PS5, PS4, XBOX e PC</h2>
+        <p>Descobre os últimos lançamentos e promoções incríveis!</p>
+        <button onclick="verCatalogo()">Ver Catálogo</button>
+    </section>
+
+    <!-- Catálogo -->
+    <section id="catalogo" class="jogos">
+        <h2>🎮 Catálogo de Jogos</h2>
+            
+        <div class="jogo">
+            <h3>FC24</h3>
+            <img src="imagens/EAFC24.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p>25,99€</p>
+            <button onclick="adicionarAoCarrinho('FIFA 24')">Comprar</button>
+        </div>
+        
+        
+        <div class="jogo">
+            <h3>Call of Duty: MW3</h3>
+            <img src="imagens/warface 3.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p>15,99€</p>
+            <button onclick="adicionarAoCarrinho('Call of Duty: MW3')">Comprar</button>
+        </div>
+        <div class="jogo">
+            <h3>Grand Theft Auto VI</h3>
+            <img src="imagens/Grand Theft Auto VI Six.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, XBOX, PC</p>
+            <p>89,99€</p>
+            <button onclick="adicionarAoCarrinho('GTA VI')">Comprar</button>
+        </div>
+        
+        <div class="jogo">
+            <h3>Red Dead Redemption 2</h3>
+            <img src="imagens/Red Dead Redemption 2.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p>69,99€</p>
+            <button onclick="adicionarAoCarrinho('Red Dead Redemption 2')">Comprar</button>
+        </div>
+        
+        <div class="jogo">
+            <h3>Elden Ring</h3>
+            <img src="imagens/Elden Ring.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p>45,99€</p>
+            <button onclick="adicionarAoCarrinho('Elden Ring')">Comprar</button>
+        </div>
+
+        <div class="jogo">
+            <h3>Assassin’s Creed Mirage</h3>
+            <img src="imagens/Assassin’s Creed Mirage.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p><strong>€49.99</strong></p>
+            <button onclick="adicionarAoCarrinho('Assassin’s Creed Mirage')">Comprar</button>
+        </div>
+        
+        <div class="jogo">
+            <h3>Resident Evil 4 Remake</h3>
+            <img src="imagens/Resident Evil 4 APK.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p><strong>€59.99</strong></p>
+            <button onclick="adicionarAoCarrinho('Resident Evil 4 Remake')">Comprar</button>
+        </div>
+        
+        <div class="jogo">
+            <h3>Starfield</h3>
+            <img src="imagens/Starfield.jpg" alt="jogo" width="100">
+            <p>Plataformas: XBOX, PC</p>
+            <p><strong>€69.99</strong></p>
+            <button onclick="adicionarAoCarrinho('Starfield')">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Promoções -->
+    <section id="promocoes" class="jogos">
+        <h2>🔥 Promoções Especiais</h2>
+        <div class="jogo">
+            <h3>Spider-Man 2</h3>
+            <img src="imagens/Marvel's Spider-Man 2 PS5.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4</p>
+            <p><del>69.99€</del> <strong>49.99€</strong></p>
+            <button onclick="adicionarAoCarrinho('Spider-Man 2')">Comprar</button>
+        </div>
+        <div class="jogo">
+            <h3>Hogwarts Legacy</h3>
+            <img src="imagens/Hogwarts Legacy.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p><del>59.99€</del> <strong>39.99€</strong></p>
+            <button onclick="adicionarAoCarrinho('Hogwarts Legacy')">Comprar</button>
+        </div>
+        <div class="jogo">
+            <h3>Ghost of Tsushima</h3>
+            <img src="imagens/ghost of tsushima.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4</p>
+            <p><del>€59.99</del> <strong>€39.99</strong></p>
+            <button onclick="adicionarAoCarrinho('Ghost of Tsushima')">Comprar</button>
+        </div>
+        
+        <div class="jogo">
+            <h3>Far Cry 6</h3>
+            <img src="imagens/Far Cry 6.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p><del>€49.99</del> <strong>€29.99</strong></p>
+            <button onclick="adicionarAoCarrinho('Far Cry 6')">Comprar</button>
+        </div>
+        
+        <div class="jogo">
+            <h3>Watch Dogs: Legion</h3>
+            <img src="imagens/watchdogs legion.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p><del>€39.99</del> <strong>€19.99</strong></p>
+            <button onclick="adicionarAoCarrinho('Watch Dogs: Legion')">Comprar</button>
+        </div>
+        
+        <div class="jogo">
+            <h3>Battlefield 2042</h3>
+            <img src="imagens/Battlefield 2042.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p><del>€59.99</del> <strong>€34.99</strong></p>
+            <button onclick="adicionarAoCarrinho('Battlefield 2042')">Comprar</button>
+        </div>
+        
+        <div class="jogo">
+            <h3>Final Fantasy XVI</h3>
+            <img src="imagens/Final Fantasy V.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5</p>
+            <p><del>€69.99</del> <strong>€49.99</strong></p>
+            <button onclick="adicionarAoCarrinho('Final Fantasy XVI')">Comprar</button>
+        </div>
+        
+        <div class="jogo">
+            <h3>Diablo IV</h3>
+            <img src="imagens/Diablo IV.jpg" alt="jogo" width="100">
+            <p>Plataformas: PS5, PS4, XBOX, PC</p>
+            <p><del>€69.99</del> <strong>€44.99</strong></p>
+            <button onclick="adicionarAoCarrinho('Diablo IV')">Comprar</button>
+        </div>
+    </section>
+<!-- Carrinho de Compras -->
+<section id="carrinho" class="carrinho" style="margin-bottom: 50px;">
+    <h2>🛒 Carrinho de Compras</h2>
+    <ul id="lista-carrinho">
+        <p>O seu carrinho está vazio.</p>
+    </ul>
+    <button onclick="limparCarrinho()">🗑️ Esvaziar Carrinho</button> 
+    <br>
+    <!-- Finalizão das compras -->
+    <button id="finalizar-compra" class="checkout-button">Finalizar Compra</button>
+
+    <div id="pagamento-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Escolha a forma de pagamento</h2>
+            <button class="payment-option" data-payment="cartao">💳 Cartão de Crédito</button>
+            <button class="payment-option" data-payment="mbway">📱 MBWAY</button>
+            <button class="payment-option" data-payment="referencia">💳 Referência Multibanco</button>
+            <button class="payment-option" data-payment="paypal">🛒 PayPal</button>
+            
+            <div id="form-cartao" class="payment-form" style="display:none;">
+                <h3>Informações do Cartão Bancário</h3>
+                <input type="text" id="numero-cartao" placeholder="Número do Cartão" required><br>
+                <input type="text" id="data-validade" placeholder="Data de Validade (MM/AA)" required><br>
+                <input type="text" id="cvv" placeholder="CVV" required><br>
+                <button class="confirm-payment">Confirmar Pagamento</button>
+            </div>
+
+            <div id="referencia-form" class="payment-form" style="display:none;">
+                <h3>Informações da Referência Multibanco</h3>
+                <input type="text" id="entidade" placeholder="Entidade" required><br>
+                <input type="text" id="referencia" placeholder="Referência" required><br>
+                <button class="confirm-payment">Confirmar Pagamento</button>
+            </div>
+
+            <div id="mbway-form" class="payment-form" style="display:none;">
+                <h3>Informações do MBWAY</h3>
+                <input type="text" id="numero-mbway" placeholder="Número de Telefone (MBWAY)" required><br>
+                <button class="confirm-payment">Confirmar Pagamento</button>
+            </div>
+
+            <div id="paypal-form" class="payment-form" style="display:none;">
+                <h3>Informações do PayPal</h3>
+                <input type="email" id="email-paypal" placeholder="E-mail do PayPal" required><br>
+                <button class="confirm-payment">Confirmar Pagamento</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Espaço visual extra -->
+<div class="espaço" style="height: 60px;"></div>
+
+<!-- Contactos -->
+<section id="contactos" class="contacto">
+    <h2>📞 Contacta-nos</h2>
+    <p>Email: <a href="mailto:suporte@levelupgames.com">suporte@levelupgames.com</a></p>
+    <p>Telefone: <a href="tel:+351912345678">+351 912 345 678</a></p>
+    <p>Endereço: Avenida da Liberdade, Nº10, Lisboa</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 LevelUp Games - Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('.jogo', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '50px',
+    easing: 'ease-in-out',
+    reset: true
+  });
+</script>
+
+</body>
+</html>
